@@ -1,25 +1,34 @@
 <!DOCTYPE html>
 <html ng-app="plunker">
-<head>
-<meta charset="utf-8" />
-<title>AngularJS Plunker</title>
-<link rel="stylesheet" href="style.css" />
-<script data-require="angular.js@1.4.x"
-	src="https://code.angularjs.org/1.4.12/angular.js" data-semver="1.4.9"></script>
-<script src="app.js"></script>
-</head>
+    <head>
+        <meta charset="utf-8" />
+        <title>AngularJS Plunker</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script data-require="angular.js@1.4.x"
+        src="https://code.angularjs.org/1.4.12/angular.js" data-semver="1.4.9"></script>
+        <script src="app.js"></script>
+    </head>
 
-<body style="background-color:white; text-align:center">
-    <div id="header" style="background-color:white">
-    <h3 style="color:blue; font-family:verdana">Angular JS Hands on tutorials :D</h3>
-    </div>
-    <hr/>
-	<input type="text" ng-model="enteredText" />
-	<bdo dir="rtl" title="createdBy">{{enteredText}}</bdo>
-	<hr/>
-	<div id="footer">
-	    <h6>Gubba proudly presenting <strong>MIRROR</strong></h6>
-	</div>
-</body>
+    <body style="background-color:white; text-align:center" class="container-fluid">
+        <div id="header" class="bg-primary">
+            <h3 style="font-family:verdana" >Angular JS Hands on tutorials :D</h3>
+        </div>
+        <hr/>
+        <div class="row">
+            <div class="col-sm-6" style="text-align:right">
+                <input type="text" ng-model="enteredText" />
+            </div>
+            <div class="col-sm-6" style="color:blue; text-align:left">
+                <bdo dir="rtl" title="createdBy">{{enteredText}}</bdo>
+            </div>
+        </div>
+        <hr/>
+        <div id="footer">
+            <footer>Gubba proudly presenting <strong>MIRROR</strong></footer>
+        </div>
+    </body>
 
 </html>
