@@ -3,12 +3,12 @@
     font-family: verdana;
     text-align: center;
     padding: 25px;
-    postion: relative;
+    position: relative;
     margin: 0 1px 0 1px;
 }
 
 #nav{
-    postion: relative;
+    position: relative;
     margin: 0 1px 0 1px;
 }
 
@@ -33,12 +33,12 @@ li a{
 }
 
 li a:hover {
-    background-color: grey;
+    background-color: #666666;
     color:white;
 }
 
 #pageContent{
-    postion: relative;
+    position: relative;
     margin: 0 1px 0 1px;
     height:450px;
 }

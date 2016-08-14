@@ -26,9 +26,23 @@
                 </li>
             </ul>
         </div>
-        <div id="pageContent" class="row">
-            <h4>INQUISITIVE</h4>
+        <div>
+            <h3 id="liveData"></h3>
         </div>
+        <script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey : "AIzaSyCT20vdeQM_c-szUoBaLYmp1nn9IVIsNQQ",
+                authDomain : "learnangular-ff01c.firebaseapp.com",
+                databaseURL : "https://learnangular-ff01c.firebaseio.com",
+                storageBucket : "learnangular-ff01c.appspot.com",
+            };
+            firebase.initializeApp(config);
+            var liveData = document.getElementById('liveData');
+            var dbRef = firebase.database().ref().child('text');
+            dbRef.on('value', snap => liveData.innerText = snap.val());
+        </script>
         <div id="bottomHeader" class="row">
             <h6 id="datetime">
             <script>
