@@ -3,17 +3,17 @@
     <head>
         <meta charset="utf-8" />
         <title>Gubba's Mirror</title>
-        <link rel="stylesheet" href="contactStyles.css" />
+        <link rel="stylesheet" href="styles.css" />
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
 
     <body class="container-fluid">
-        <div id="header" class="bg-primary row">
+        <header class="bg-primary">
             <h3>Angular JS Hands on tutorials :D</h3>
-        </div>
-        <div id="nav" class="row">
+        </header>
+        <nav>
             <ul>
                 <li>
                     <a href="index.html"><img src="http://lugoloungeny.com/HomButton.png" width=20 height=20 title="HOME"/></a>
@@ -25,11 +25,22 @@
                     <a href="contactMe.html">Contact Me</a>
                 </li>
             </ul>
-        </div>
-        <div id="pageContent" class="row">
+        </nav>
+        <section class="row">
             <h4>INQUISITIVE</h4>
-        </div>
-        <div id="bottomHeader" class="row">
+        </section>
+        <div id="bottomHeader">
+            <ul>
+                <li>
+                    <a href="index.html"><img src="http://lugoloungeny.com/HomButton.png" width=20 height=20 title="HOME"/></a>
+                </li>
+                <li>
+                    <a href="aboutMe.html">About Me</a>
+                </li>
+                <li>
+                    <a href="contactMe.html">Contact Me</a>
+                </li>
+            </ul>
             <h6 id="datetime">
             <script>
                 document.getElementById('datetime').innerHTML = Date()

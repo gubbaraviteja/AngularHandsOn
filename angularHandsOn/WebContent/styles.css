@@ -1,18 +1,44 @@
-#header {
+body {
+    background-color: white;
+    text-align: center
+}
+
+header {
+    background-color: blue;
     color: white;
     font-family: verdana;
-    text-align: center;
-    padding: 25px;
-    postion: relative;
-    margin: 0 1px 0 1px;
+    padding: 15px;
+    text-align: center
 }
 
-#nav{
-    postion: relative;
-    margin: 0 1px 0 1px;
+#bottomHeader {
+    position: fixed;
+    bottom: 30px;
+    width: 96.5%
 }
 
-ul{
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none
+}
+a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none
+}
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline
+}
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline
+}
+
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -20,39 +46,26 @@ ul{
     background-color: #333333
 }
 
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
 li {
     float: left;
 }
 
-li a{
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 5px;
-    text-decoration: none;
-}
-
 li a:hover {
-    background-color: grey;
-    color:white;
-}
-
-#pageContent{
-    postion: relative;
-    margin: 0 1px 0 1px;
-    height:450px;
-}
-
-#bottomHeader {
-    background-color: #333333;
-    position: relative;
-    margin: 0 1px 0 1px;
-    bottom: 10px;
+    background-color: #111111
 }
 
 #datetime{
-    text-align: left;    
+    float:right;
+    position:absolute;
+    right:15px;
+    bottom: 12px;
     color:white;
-    display: block;
-    padding: 2px;
 }
